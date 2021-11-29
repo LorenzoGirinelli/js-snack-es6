@@ -4,12 +4,23 @@
 // Creiamo un nuovo array contenente i valori che hanno la posizione compresa tra i due numeri.
 // Eseguiamo questo esercizio prima con forEach e poi con filter.
 
-const myArray = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
+// const myArray = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
+// const min = 1;
+// const max = 4;
+// myArray.forEach((element, index)=>{
+//     if (index > min) {
+//     } else if (index < max) {
+//         console.log(element);
+//     }
+// })
+
+
+const names = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
 const min = 1;
-const max = 4
-myArray.forEach((element, index)=>{
-    if (index > 1) {
-    } else if (index < 4) {
+const max = 4;
+const newArray = names.filter((element, index, array) =>{
+    if (index > min) {
+    } else if (index < max) {
         console.log(element);
     }
 })
