@@ -1,16 +1,16 @@
 const bikeType =
 [
     {
-        nome:'graziella',
-        peso: 45,
+        nome:'Fizik',
+        peso: 8,
     },
     {
-        nome:'corsa',
-        peso: 20,
+        nome:'Miche',
+        peso: 6,
     },
     {
-        nome:'mountain-bike',
-        peso: 35,
+        nome:'Shimano',
+        peso: 10,
     }
 ];
 // Trovare la bicicletta con il peso minore
@@ -23,3 +23,9 @@ for( let i = 0; i < bikeType.length; i++) {
     }
 }
 console.log(theLightestBike);
+// Stampare a schermo
+const{nome, peso} = theLightestBike;
+const bikeHTML = `
+<p>La bicicletta più leggera è ${nome} il cui peso è di ${peso} kg</p>
+`;
+document.getElementById('container').innerHTML = bikeHTML;
